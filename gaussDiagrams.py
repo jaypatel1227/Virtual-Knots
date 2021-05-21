@@ -35,7 +35,7 @@ def main(rels):
 def pointInBetween(gens, r, length, n, numOfArrows, occurance):
     return Point(length/2 + r*math.cos(2*((n+(occurance/float(1 + numOfArrows))) % gens)*math.pi/float(gens)), length/2 + r*math.sin(2*((n+(occurance/float(1 + numOfArrows))) % gens)*math.pi/float(gens)))
 
-main([[1,5], [2,5], [3,1], [4,5], [5,1], [6,1], [7,5], [8,1]])
+
 
 # This function takes in a realizable wirtinger presentation and gets a possible gauss code corresponding to a knot whose group is isomorphic to the realizable wirtinger presentaiton
 def getGCode(rels):
@@ -50,4 +50,5 @@ def getGCode(rels):
 
 
 if __name__ == "__main__":
+    main([[1,5], [2,5], [3,1], [4,5], [5,1], [6,1], [7,5], [8,1]])
     print(getGCode([[1,5], [2,5], [3,1], [4,5], [5,1], [6,1], [7,5], [8,1]]))
